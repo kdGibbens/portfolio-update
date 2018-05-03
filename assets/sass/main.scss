@@ -1,7 +1,11 @@
 /* Basic imports */
+
 @import 'normalize';
 @import 'vars';
 @import 'mixins';
 @import 'grid';
 
 /* Specific Page Imports */
+
+@import 'default';
+@import 'home';

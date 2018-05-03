@@ -13,6 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "ajv": "^6.4.0",
+    "npm": "^6.0.0",
     "nuxt": "^1.0.0",
     "nuxt-sass-resources-loader": "^2.0.0"
   },

@@ -1,6 +1,14 @@
+/*********** Variables ***********/
+/*********** MEDIA QUERIES ***********/
 $tablet: 768px;
 $laptop: 1024px;
 $hd-desktop: 1440px;
 $ultra-hd: 2560px;
+
+/*********** Colors ***********/
 $black: rgb(26, 26, 26);
 $white: rgb(254, 254, 254);
+
+/*********** Layout ***********/
+$grid: grid;
+$container: 1100px;
