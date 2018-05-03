@@ -2,11 +2,14 @@ module.exports = {
   css: [
     '@/assets/sass/main.scss'
   ],
+  plugins: [
+    { src: '~/plugins/font-awesome' }
+  ],
   /*
   ** Headers of the page
   */
   head: {
-    title: 'Kelly Gibbens - Web Dev',
+    title: 'Kelly Gibbens - Front-end UI Web Developer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
