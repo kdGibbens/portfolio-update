@@ -1,0 +1,29 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #__nuxt {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        #__layout {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .nuxt__container {
+                width: 100%;
+                position: relative;
+                height: 100%;
+                .container {
+                    max-width: $container;
+                    height: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
