@@ -1,5 +1,5 @@
 <template>
-    <footer class="main-footer">Footer &copy;</footer>
+    <footer class="main-footer">&copy; Year Kelly Gibbens</footer>
 </template>
 
 <script>
