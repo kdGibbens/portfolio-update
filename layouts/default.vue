@@ -1,7 +1,20 @@
 <template>
   <div class="nuxt__container">
-    <div class="container grid">
+    <the-header></the-header>
+    <main class="container grid">
       <nuxt/>
-    </div> 
+      <the-footer></the-footer>
+    </main> 
   </div>
 </template>
+
+<script>
+  import TheHeader from '@/components/TheHeader/TheHeader';
+  import TheFooter from '@/components/TheFooter/TheFooter';
+  export default {
+    components: {
+      TheHeader,
+      TheFooter,
+    }
+  }
+</script>
