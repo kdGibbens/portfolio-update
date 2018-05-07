@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Knewave');
 /*********** Variables ***********/
 /*********** MEDIA QUERIES ***********/
 $tablet: 768px;
@@ -12,3 +13,8 @@ $white: rgb(254, 254, 254);
 /*********** Layout ***********/
 $grid: grid;
 $container: 1100px;
+
+
+/*********** Fonts ************/
+$logo: 'Knewave', cursive;
+
