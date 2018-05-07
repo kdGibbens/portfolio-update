@@ -34,6 +34,7 @@
                 transition: 300ms;
                 transform: translateX(-100%);
                 width: 75%;
+                z-index: 1;
                 @include breakpoint($tablet){
                     width: 70%;
                 }
