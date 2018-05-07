@@ -8,8 +8,8 @@
         &__logo-link {
             text-decoration: none;
             font-size: 2.25rem;
-            font-family: sans-serif;
-            color: $black;
+            font-family: $logo;
+            color: tomato;
         }
         .menu {
             display: $grid;
@@ -24,7 +24,6 @@
                 height: 100%;
             }
             &__nav {
-                grid-template-rows: repeat(3, 3rem);
                 justify-items: center;
                 align-items: center;
                 height: 100%;
@@ -54,8 +53,10 @@
                     background: rgb(96, 96, 96);
                     border-radius: 0 2rem 2rem 0;
                     box-shadow: inset 0 5px 1px rgba(0,0,0,0.5);
+                    grid-template-rows: repeat(3, 5rem);
                     .nav-item {
                         color: $white;
+                        font-size: 4rem;
                     }
                 }
                 .nav-item {
