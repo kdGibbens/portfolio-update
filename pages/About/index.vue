@@ -1,7 +1,18 @@
 <template>
   <div class="about">
     <div class="left">
-      <h1 class="heading-1 bold">About Me</h1>
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img-holder">
+
+          </div>
+        </div>
+        <div class="card__info">
+          <p>Kelly Gibbens</p>
+          <p>Front-end UI Developer</p>
+        </div>
+      </div>
+      <div class="overlay-div"></div>
     </div>
     <div class="right">
       <div class="about__text">
