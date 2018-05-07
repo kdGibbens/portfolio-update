@@ -1,10 +1,15 @@
 .main__content {
-    justify-items: center;
-    align-items: center;
     grid-template-columns: 1fr;
     .home {
         display: $grid;
-        grid-template-columns: 1fr 2rem;
+        grid-template-columns: 10rem 2rem;
+        justify-items: center;
+        align-items: center;
+        justify-self: center;
+        align-self: center;
+        h1 {
+            font-size: 5rem;
+        }
         .icon {
             font-size: 3rem;
             color: rgb(255, 187, 0);
