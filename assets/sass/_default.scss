@@ -8,6 +8,10 @@ body {
         box-sizing: border-box;
 
     }
+    h1 {
+        font-size: 6rem;
+        font-weight: 700;
+    }
     #__nuxt {
         position: relative;
         width: 100%;
@@ -18,12 +22,13 @@ body {
             height: 100%;
             .nuxt__container {
                 width: 100%;
+                min-height: 100vh;
                 position: relative;
-                height: 100%;
+                display: $grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 5rem 1fr 3rem;
                 .container {
-                    max-width: $container;
                     height: 100%;
-                    margin: 0 auto;
                 }
             }
         }

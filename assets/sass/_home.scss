@@ -1,0 +1,13 @@
+.main__content {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    .home {
+        display: $grid;
+        grid-template-columns: 1fr 2rem;
+        .icon {
+            font-size: 3rem;
+            color: rgb(255, 187, 0);
+        }
+    }
+}

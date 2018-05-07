@@ -1,10 +1,10 @@
 <template>
   <div class="nuxt__container">
     <the-header></the-header>
-    <main class="container grid">
+    <main class="container grid main__content">
       <nuxt/>
-      <the-footer></the-footer>
     </main> 
+    <the-footer></the-footer>
   </div>
 </template>
 
