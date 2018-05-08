@@ -1,16 +1,37 @@
 .about {
     display: $grid;
-    grid-template-rows: 50vh 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 1rem;
-    grid-template-columns: 1fr;
     @include breakpoint($tablet){
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
     .left {
-        display: $grid;
-        justify-items: center;
-        align-items: center;
+        padding: 1rem;
+        .card {
+
+            .card__img {
+                img {
+                    width: 100%;
+                }
+            }
+            .card__info {
+                border:1px solid slategray;
+                padding: 1rem;
+                background: lightslategray; 
+                border-top: 1px solid pink;
+                grid-column: 1fr / 13;
+                color: $white;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    transition: 250ms;
+                    &:hover {
+                        color: tomato;
+                    }
+                }
+            }
+        }
     }
     .right {
         .about__text {

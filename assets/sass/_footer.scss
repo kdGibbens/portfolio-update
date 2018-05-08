@@ -1,9 +1,11 @@
 footer {
     &.main-footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: 1fr;
+        max-width: 1024px;
+        margin: 0 auto;
         grid-gap: 1rem;
+        padding-left: 1rem;
+        align-self: center;
     }
 }
