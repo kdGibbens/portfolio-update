@@ -3,16 +3,14 @@
     <div class="left">
       <div class="card">
         <div class="card__img">
-          <div class="card__img-holder">
-
-          </div>
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png?x31871" alt="">
         </div>
         <div class="card__info">
           <p>Kelly Gibbens</p>
-          <p>Front-end UI Developer</p>
+          <p>Front-end Web Developer</p>
+          <p><a href="mailto:gibbenskd@gmail.com">gibbenskd@gmail.com</a></p>
         </div>
       </div>
-      <div class="overlay-div"></div>
     </div>
     <div class="right">
       <div class="about__text">

@@ -3,8 +3,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
-        justify-items: center;
-        align-items: center;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 1rem;
         &__logo-link {
             text-decoration: none;
             font-size: 2.25rem;
@@ -14,26 +15,26 @@
         .menu {
             display: $grid;
             justify-items: end;
-            width: 70%;
+            align-items: center;
+            height: 100%;
             @include breakpoint($tablet){
-                width: 100%; 
-                justify-items: center;
+
             }
             @include breakpoint($laptop){
-                width: 100%;
-                height: 100%;
+
             }
             &__nav {
                 justify-items: center;
                 align-items: center;
                 height: 100%;
                 display: $grid;
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
                 transition: 300ms;
                 transform: translateX(-100%);
                 width: 75%;
+                height: 100vh;
                 z-index: 1;
                 @include breakpoint($tablet){
                     width: 70%;
@@ -44,7 +45,7 @@
                     height: auto;
                     background: transparent;
                     grid-template-rows: 1fr;
-                    grid-template-columns: repeat(3, 7rem);
+                    grid-template-columns: repeat(3, 1fr);
                     width: 100%;
                 }
                 &.open {
@@ -86,8 +87,8 @@
                 }
                 &.active {
                     position: fixed;
-                    top: .7rem;
-                    right: 1.5rem;
+                    top: .75rem;
+                    right: 1rem;
                     .menu__btn {
                         transform: translateY(-3.75rem);
                     }
