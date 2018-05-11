@@ -1,41 +1,28 @@
 <template>
   <div class="portfolio">
-    <div class="protfolio-projects">
-      <div class="recent">
+    <div class="portfolio-projects">
+      <div class="recent project-section">
         <h2>{{recent}}</h2>
-
-        <a v-for="project in portfolio" v-bind:key="project.id" v-bind:href="project.url" v-if="!project.internal && project.new" target="_blank">
+        <a class="project-link" v-for="project in portfolio" v-bind:key="project.id" v-bind:href="project.url" v-if="!project.internal && project.new" target="_blank">
           <div class="card">
             <h3>{{ project.name }}</h3>
           </div>
         </a>
-
-        <nuxt-link v-bind:key="project.id" v-else-if="project.internal && project.new">
+        <nuxt-link class="project-link" :id="project.id" :to="project.url" v-bind:key="project.id" v-else-if="project.internal && project.new">
           <div class="card">
             <h3>{{ project.name }}</h3>
           </div>
         </nuxt-link>
-
       </div>
 
-      <div class="older">
+      <div class="older project-section">
         <h2>{{older}}</h2>
-        <a v-for="project in portfolio" v-bind:key="project.id" v-bind:href="project.url" v-if="!project.new" target="_blank">
+        <a class="project-link" v-for="project in portfolio" v-bind:key="project.id" v-bind:href="project.url" v-if="!project.new" target="_blank">
           <div class="card">
             <h3>{{ project.name }}</h3>
           </div>
         </a>
       </div>
-    <!-- <a v-for="project in portfolio" v-bind:key="project.id" v-bind:href="project.url" v-if="!project.internal" target="_blank">
-      <div class="card">
-        <h3>{{ project.name }}</h3>
-      </div>
-    </a> -->
-    <!-- <nuxt-link v-bind:key="project.id" v-else>
-      <div class="card">
-        <h3>{{ project.name }}</h3>
-      </div>
-    </nuxt-link> -->
     </div>
   </div>
 </template>
@@ -47,6 +34,13 @@
           older: 'Older Projects:',
           recent: 'Recent Projects:',
           portfolio: {
+            fake: {
+              id: 'test',
+              name: 'test',
+              url: '/',
+              internal: true,
+              new: true
+            },
             crypto: {
               id: 'crypto',
               name: 'Crypto Price Watch',
