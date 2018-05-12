@@ -4,19 +4,19 @@
     padding: 1rem;
     &-projects {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 3rem;
         .project-section {
             display: grid;
-            grid-auto-rows: minmax(1rem, 1fr);
-            grid-gap: 1rem;
+            grid-gap: 2rem 0;
             justify-items: center;
             align-items: center;
             @include breakpoint($tablet){
                 grid-template-columns: repeat(2, 1fr);
+                grid-gap: 3rem 2rem;
             }
             @include breakpoint($laptop){
                 grid-template-columns: repeat(3, 1fr);
+                grid-gap: 3rem 5rem;
             }
             h2 {
                 grid-column: span 1;
