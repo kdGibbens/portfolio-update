@@ -82,13 +82,14 @@
                 border-radius: 50%;
                 display: block;
                 overflow: hidden;
+                position: fixed;
+                    top: .75rem;
+                    right: 1rem;
                 @include breakpoint($laptop){
                     display: none;
                 }
                 &.active {
-                    position: fixed;
-                    top: .75rem;
-                    right: 1rem;
+                    
                     .menu__btn {
                         transform: translateY(-3.75rem);
                     }
@@ -100,9 +101,10 @@
                     text-align: center;
                     transition: 300ms;
                     color: tomato;
+                    background: $white;
                     &.menu__btn--close {
                         background: tomato;
-                        color: white;
+                        color: rgba(255,255,255,0.75);
                     }
                 }
 

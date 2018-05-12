@@ -1,8 +1,7 @@
 .main__content {
     grid-template-columns: 1fr;
-    margin-top: 1rem;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 2rem auto;
     .home {
         display: $grid;
         grid-template-columns: 10rem 2rem;

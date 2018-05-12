@@ -5,11 +5,13 @@
         <h2>{{recent}}</h2>
         <a class="project-link" v-for="project in portfolio" v-bind:key="project.id" v-bind:href="project.url" v-if="!project.internal && project.new" target="_blank">
           <div class="card">
+            <font-awesome-icon :icon="[project.fa, project.icon]" class="icon" />
             <h3>{{ project.name }}</h3>
           </div>
         </a>
         <nuxt-link class="project-link" :id="project.id" :to="project.url" v-bind:key="project.id" v-else-if="project.internal && project.new">
           <div class="card">
+            <font-awesome-icon :icon="[project.fa, project.icon]" class="icon" />
             <h3>{{ project.name }}</h3>
           </div>
         </nuxt-link>
@@ -19,6 +21,7 @@
         <h2>{{older}}</h2>
         <a class="project-link" v-for="project in portfolio" v-bind:key="project.id" v-bind:href="project.url" v-if="!project.new" target="_blank">
           <div class="card">
+            <font-awesome-icon :icon="[project.fa, project.icon]" class="icon" />
             <h3>{{ project.name }}</h3>
           </div>
         </a>
@@ -34,54 +37,68 @@
           older: 'Older Projects:',
           recent: 'Recent Projects:',
           portfolio: {
-            fake: {
-              id: 'test',
-              name: 'test',
-              url: '/',
-              internal: true,
-              new: true
+            nasa: {
+              id: 'nasa',
+              name: 'Nasa Image Search',
+              url: '',
+              internal: false,
+              new: true,
+              fa: 'fas',
+              icon: 'space-shuttle'
             },
             crypto: {
               id: 'crypto',
               name: 'Crypto Price Watch',
               url: 'https://gracious-khorana-24625a.netlify.com/',
               internal: false,
-              new: true
+              new: true,
+              fa: 'fab',
+              icon: 'bitcoin'
             },
             translator: {
               id: 'Language',
               name: 'Language Translator',
               url: 'https://reverent-goldberg-266107.netlify.com/#/',
               internal: false,
-              new: true
+              new: true,
+              fa: 'fas',
+              icon: 'language'
             },
             quote: {
               id:'Quote',
               name: 'Quote Machine',
               url: 'http://kellygibbens.com/ht_docs/random_quote_machine_jquery/',
               internal: false,
-              new: false
+              new: false,
+              fa: 'fas',
+              icon: 'quote-right'
             },
             explore: {
               id: 'explore',
               name: 'Explore Outdoors',
               url: 'http://exploreoutdoors.us/',
               internal: false,
-              new: false
+              new: false,
+              fa: 'fas',
+              icon: 'tree'
             },
             scroll: {
               id: 'Scroll',
               name: 'Scroll Magic',
               url: 'http://kellygibbens.com/ht_docs/scrollMagic/',
               internal: false,
-              new: false
+              new: false,
+              fa: 'fas',
+              icon: 'arrow-down'
             },
             pawn: {
               id: 'Pawn',
               name: 'Mission Pawn',
               url: 'http://missionpawn.com/',
               internal: false,
-              new: false
+              new: false,
+              fa: 'fas',
+              icon: 'shopping-bag'
             }
           }
         }
