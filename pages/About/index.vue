@@ -1,17 +1,8 @@
 <template>
   <div class="about">
     <div class="left">
-      <div class="card">
-        <div class="card__img">
-          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png?x31871" alt="">
-        </div>
-        <div class="card__info">
-          <p>{{name}}</p>
-          <p>{{title}}</p>
-          <p><a :href="mailTo">{{email}}</a></p>
-        </div>
-      </div>
-    </div>
+      <card-info></card-info>
+     </div>
     <div class="right">
       <div class="about__text">
         <h3>{{about.title}}</h3>
@@ -24,6 +15,7 @@
 </template>
 
 <script>
+  import CardInfo from '@/components/Card/CardInfo';
     export default {
       data() {
         return {
@@ -36,6 +28,9 @@
             description: 'About me...'
           }
         }
+      },
+      components: {
+        CardInfo
       }
     }
 </script>

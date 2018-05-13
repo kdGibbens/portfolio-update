@@ -1,32 +1,18 @@
 .header-container {
+    background: #fefefe;
+    border-bottom: .25rem solid  #516A89;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
     .header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-        max-width: 1024px;
         margin: 0 auto;
         padding: 0 1rem;
         &__logo-link {
             text-decoration: none;
-            font-size: 2.25rem;
+            font-size: 2rem;
             font-family: $logo;
-            color: tomato;
+            color: #516A89;
         }
         .menu {
-            display: $grid;
-            justify-items: end;
-            align-items: center;
-            height: 100%;
-            @include breakpoint($tablet){
-
-            }
-            @include breakpoint($laptop){
-
-            }
             &__nav {
-                justify-items: center;
-                align-items: center;
-                display: $grid;
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -43,53 +29,46 @@
                     transform: translateX(0);
                     height: auto;
                     background: transparent;
-                    grid-template-rows: 1fr;
-                    grid-template-columns: repeat(3, 1fr);
                     width: 100%;
                 }
                 &.open {
-                    display: $grid;
                     transform: translateX(0);
                     padding: 5rem 1rem;
-                    background: rgb(96, 96, 96);
                     border-radius: 0 1rem 1rem 0;
-                    box-shadow: inset -2px 0px 14px 2px rgba(0, 0, 0, .5);
-                    grid-template-rows: repeat(3, 5rem);
                     .nav-item {
-                        color: $white;
+
                         font-size: 2.5rem;
                     }
                 }
                 .nav-item {
                     text-decoration: none;
-                    color: $black;
+                    color: rgba(81, 106, 137, 0.75);
                     transition: 250ms;
                     line-height: 3rem;
                     font-size: 1.5rem;
                     &.nuxt-link-exact-active {
-                        border-bottom: 4px solid tomato;
-                        color: tomato;
+                        border-bottom: 4px solid rgba(81, 106, 137, 1);
+                        color: rgba(81, 106, 137, 1);
                     }
                     &:hover {
-                        color: tomato;
+                        color: rgba(81, 106, 137, 1);
                     }
                 }
             }
             &__btns {
                 width: 3.75rem;
                 height: 3.75rem;
-                border: .2rem solid tomato;
+                border: .2rem solid #516A89;
                 border-radius: 50%;
                 display: block;
                 overflow: hidden;
                 position: fixed;
-                    top: .75rem;
-                    right: 1rem;
+                top: .75rem;
+                right: 1rem;
                 @include breakpoint($laptop){
                     display: none;
                 }
                 &.active {
-                    
                     .menu__btn {
                         transform: translateY(-3.75rem);
                     }
@@ -100,14 +79,13 @@
                     line-height: 3.75rem;
                     text-align: center;
                     transition: 300ms;
-                    color: tomato;
-                    background: $white;
+                    color: #516A89;
+                    background: transparent;
                     &.menu__btn--close {
-                        background: tomato;
-                        color: rgba(255,255,255,0.75);
+                        background: #516A89;
+                        color: #9BC4DB;
                     }
                 }
-
             }
         }
     }

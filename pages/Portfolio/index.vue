@@ -82,24 +82,6 @@
               fa: 'fas',
               icon: 'tree'
             },
-            scroll: {
-              id: 'Scroll',
-              name: 'Scroll Magic',
-              url: 'http://kellygibbens.com/ht_docs/scrollMagic/',
-              internal: false,
-              new: false,
-              fa: 'fas',
-              icon: 'arrow-down'
-            },
-            pawn: {
-              id: 'Pawn',
-              name: 'Mission Pawn',
-              url: 'http://missionpawn.com/',
-              internal: false,
-              new: false,
-              fa: 'fas',
-              icon: 'shopping-bag'
-            }
           }
         }
       }
