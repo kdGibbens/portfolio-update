@@ -2,16 +2,29 @@
     background: #fefefe;
     border-bottom: .25rem solid  #516A89;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
     .header {
-        margin: 0 auto;
-        padding: 0 1rem;
+        grid-column: 2 /3;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        @include breakpoint($laptop){
+            grid-column: 3 /11;
+        }
         &__logo-link {
             text-decoration: none;
             font-size: 2rem;
             font-family: $logo;
             color: #516A89;
+            justify-self: start;
         }
         .menu {
+            grid-column: 2 / 5;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             &__nav {
                 position: fixed;
                 top: 0;
@@ -20,7 +33,6 @@
                 transform: translateX(-100%);
                 width: 75%;
                 height: 100vh;
-                z-index: 1;
                 @include breakpoint($tablet){
                     width: 50%;
                 }
@@ -30,13 +42,17 @@
                     height: auto;
                     background: transparent;
                     width: 100%;
+                    grid-column: 1 / 4;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-items: center;
+                    align-items: center;
                 }
                 &.open {
                     transform: translateX(0);
                     padding: 5rem 1rem;
                     border-radius: 0 1rem 1rem 0;
                     .nav-item {
-
                         font-size: 2.5rem;
                     }
                 }
