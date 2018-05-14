@@ -7,7 +7,6 @@ body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
     }
     h1,h2,h3,h4,h5,h6 {
         font-weight: 700;
@@ -16,11 +15,23 @@ body {
         #__layout {
             .nuxt__container {
                 width: 100%;
-                min-height: 100vh;
+                height: 100vh;
                 display: $grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 5rem 1fr 5rem;
-
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: 6rem 1fr 2rem;
+                grid-gap: 1rem;
+                .header-container {
+                    grid-column: 1 / 13;
+                }
+                .main__content {
+                    grid-column: 1 / 13;                   
+                    @include breakpoint($hd-desktop) {
+                        grid-column: 3 / 11;
+                    }
+                }
+                footer {
+                    grid-column: 1 / 13;
+                }
             }
         }
     }
