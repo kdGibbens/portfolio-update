@@ -1,0 +1,27 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 2 / 11;
+    .left {
+        grid-column: 1 / 5;
+        justify-self: center;
+        align-self: center;
+    }
+    .right {
+        grid-column: 1 / 5;
+        justify-self: center;
+        align-items: center;
+        .about__text {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+            padding: 0 2rem;
+            h3 {
+                grid-column: 1 / 5;
+            }
+            p {
+                grid-column: 1 / 5;
+            }
+        }
+    }
+}

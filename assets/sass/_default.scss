@@ -11,6 +11,9 @@ body {
     h1,h2,h3,h4,h5,h6 {
         font-weight: 700;
     }
+    p {
+        font-size: 1rem;
+    }
     #__nuxt {
         #__layout {
             .nuxt__container {
@@ -30,7 +33,10 @@ body {
                     }
                 }
                 footer {
-                    grid-column: 1 / 13;
+                    grid-column: 2 / 13;
+                    @include breakpoint($laptop){
+                        grid-column: 3 / 11;
+                    }
                 }
             }
         }
