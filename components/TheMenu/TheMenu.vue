@@ -37,7 +37,7 @@ export default {
                     link: '/about'
                 },
                 portfolio: {
-                    name: 'portfolio',
+                    name: 'Works',
                     link: '/portfolio'
                 }
             }

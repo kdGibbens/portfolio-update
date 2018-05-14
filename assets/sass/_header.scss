@@ -45,8 +45,7 @@
                     grid-column: 1 / 4;
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
-                    justify-items: center;
-                    align-items: center;
+                    grid-gap: 1rem;
                 }
                 &.open {
                     transform: translateX(0);
@@ -99,7 +98,7 @@
                     background: transparent;
                     &.menu__btn--close {
                         background: #516A89;
-                        color: #9BC4DB;
+                        color: $white;
                     }
                 }
             }

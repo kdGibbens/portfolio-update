@@ -5,6 +5,7 @@
     h1 {
         font-family:$logo;
         font-size:$logo-sm;
+        transform: translateY(-50%);
         @include breakpoint($tablet){
             font-size: $logo-md;
         }
