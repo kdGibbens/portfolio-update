@@ -60,14 +60,28 @@ export default {
 
     .info-card .card-header {
         background: url(~/assets/images/kelly-gibbens.jpg) no-repeat;
-        height: 15rem;
-        width: 15rem;
+        height: 11rem;
+        width: 11rem;
         background-size: cover;
         position: relative;
         background-position: top;
         border-radius: 50%;
-        border: 6px solid rgb(31, 89, 155);
-        box-shadow: 0 0 10px 3px rgba(0,0,0,0.5)
+        border: 6px solid #516A89;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 768px){
+        .info-card .card-header {
+            width: 13rem;
+            height: 13rem;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .info-card .card-header {
+        max-width: 70%;
+        max-height: 62%;
+        }
+
     }
     .card-body {
         padding: 1rem;
