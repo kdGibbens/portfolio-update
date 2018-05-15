@@ -1,10 +1,12 @@
 .home {
     grid-column: 1 / 13;
-    justify-self: center;
-    align-self:center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     h1 {
         font-family:$logo;
         font-size:$logo-sm;
+        align-self: center;
+        grid-column: 2/3;
         @include breakpoint($tablet){
             font-size: $logo-md;
         }

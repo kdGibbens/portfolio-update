@@ -18,7 +18,7 @@
         </div>
 
         <div class="card-footer">
-            <font-awesome-icon :icon="[icon.fa, icon.company]" class="icon" v-for="icon in icons" v-bind:key="icon.company" :alt="icon.company"/>
+            <a v-for="icon in icons" v-bind:key="icon.company" :href="icon.url"><font-awesome-icon :icon="[icon.fa, icon.company]" class="icon" /></a>
         </div>
 
     </div>
@@ -36,11 +36,13 @@ export default {
             icons: {
                 github: {
                     fa: 'fab',
-                    company: 'github'
+                    company: 'github',
+                    url: 'https://github.com/kdGibbens'
                 },
                 linkedin: {
                     fa: 'fab',
-                    company: 'linkedin'
+                    company: 'linkedin',
+                    url: 'https://www.linkedin.com/in/kelly-gibbens-0987a039/'
                 }
             }
         }
@@ -52,6 +54,8 @@ export default {
         background: white;
         padding: 1rem;
         border-radius: 5px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+        background: linear-gradient(#546d8c 0%,#ba555f 100%);
     }
 
     .info-card .card-header {
@@ -61,30 +65,40 @@ export default {
         background-size: cover;
         position: relative;
         background-position: top;
-        border-radius: 5px;
-    }
-    .card-header:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #5397cc 0%,#ba555f 100%);
-        opacity: .35;
+        border-radius: 50%;
+        border: 6px solid rgb(31, 89, 155);
+        box-shadow: 0 0 10px 3px rgba(0,0,0,0.5)
     }
     .card-body {
-        padding: 2rem 1rem 1rem;
+        padding: 1rem;
         position: relative;
+        text-align: center;
+       
     }
-    .card-body::before {
-        content: '';
-        position: absolute;
-        background: white;
-        height: 4rem;
-        top: -1rem;
-        left: 0;
-        width: 100%;
-        transform: skewX(-10deg);
-        z-index: 1;
+    .card-body h2, .card-body p {
+        color: #fffff0;
+    }
+    .card-body a {
+        color: #fffff0;
+        text-decoration: none;
+        transition: 1s;
+    }
+    .card-body a:hover {
+        text-decoration: underline;
+    }
+    .card-footer {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .card-footer svg {
+        font-size: 2rem;
+        color: #fffff0;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .card-footer svg:hover {
+        color: #546d8c;
     }
 </style>
 
