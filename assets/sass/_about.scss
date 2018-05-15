@@ -1,0 +1,41 @@
+.about {
+    margin-top: 1rem;
+    grid-column: 3 / 11;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+    @include breakpoint($tablet){
+        grid-column: 1 /13;
+        grid-gap: 1rem;
+    }
+    .left {
+        grid-column: 1 / 13;
+        grid-template-rows: repeat(6, 1fr);
+        @include breakpoint($tablet){
+            grid-column: 1 / 7;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            
+            .info-card {
+                grid-column: 2 / 6;
+                grid-row: 2 / 6;
+            }
+        }
+    }
+    .right {
+        grid-column: 1 / 13;
+        @include breakpoint($tablet){
+            grid-column: 7 / 13;
+        }
+        .about__text {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            h3 {
+                grid-column: 1 / 13;
+            }
+            p {
+                grid-column: 1 /13;
+            }
+        }
+    }
+}

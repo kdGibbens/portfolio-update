@@ -24,10 +24,9 @@ body {
                     grid-column: 1 / 13;
                 }
                 .main__content {
-                    grid-column: 1 / 13;                   
-                    @include breakpoint($hd-desktop) {
-                        grid-column: 3 / 11;
-                    }
+                    grid-column: 1 / 13;
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);                   
                 }
                 footer {
                     grid-column: 1 / 13;
