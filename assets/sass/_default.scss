@@ -18,7 +18,7 @@ body {
                 height: 100vh;
                 display: $grid;
                 grid-template-columns: repeat(12, 1fr);
-                grid-template-rows: 6rem 1fr 2rem;
+                grid-template-rows: 4rem 1fr 3rem;
                 grid-gap: 0 1rem;
                 .header-container {
                     grid-column: 1 / 13;

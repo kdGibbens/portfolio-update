@@ -1,18 +1,54 @@
 .home {
     grid-column: 1 / 13;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1rem 5rem 2rem;
+    background: url('~/assets/images/kelly-gibbens-bg-sm.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include breakpoint($tablet){
+        background: url('~/assets/images/kelly-gibbens-bg-md.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        grid-template-rows: 4rem 5rem 2rem;
+    }
+    @include breakpoint($laptop){
+        background: url('~/assets/images/kelly-gibbens-bg-lg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        grid-template-rows: 2rem 5rem 2rem;
+    }
     h1 {
         font-family:$logo;
         font-size:$logo-sm;
-        align-self: center;
-        grid-column: 2/3;
-        color: #516A89;
+        font-weight: $logo-weight;
+        color: $white;
+        grid-column: 2 / 10;
+        grid-row: 2 / 3;
         @include breakpoint($tablet){
             font-size: $logo-md;
+            grid-column: 2 /12;
+            justify-self: end;
+            align-self: end;
         }
         @include breakpoint($laptop){
             font-size: $logo-lg;
+            grid-column: 3 / 11;
+        }
+    }
+    h2 {
+        grid-column: 2 /12;
+        grid-row: 3 / 4;
+        color: $white;
+        @include breakpoint($tablet){
+            justify-self: end;
+        }
+        @include breakpoint($laptop){
+            grid-column: 3 / 11;
+            justify-self: end;
         }
     }
 }

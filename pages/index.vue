@@ -1,6 +1,7 @@
 <template>
   <section class="home">
-    <h1 class=heading--1>kdg</h1>
+    <h1>Workin' with Kelly Gibbens</h1>
+    <h2>Front-end Developer</h2>
   </section>
 </template>
 
