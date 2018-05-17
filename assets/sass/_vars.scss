@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Knewave|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
 /*********** Variables ***********/
 /*********** MEDIA QUERIES ***********/
 $tablet: 768px;
@@ -8,15 +8,18 @@ $ultra-hd: 2560px;
 
 /*********** Colors ***********/
 $black: rgb(26, 26, 26);
-$white: rgb(254, 254, 254);
+$white:#fefefe;
+$gray: #424242;
 
 /*********** Layout ***********/
 $grid: grid;
 
 /*********** Fonts ************/
-$logo: 'Knewave', cursive;
-$paragraph: 'Roboto', sans-serif;
-$logo-sm: 7rem;
-$logo-md: 11rem;
-$logo-lg: 13rem;
-
+$logo: 'Raleway', sans-serif;
+$paragraph: 'Raleway', sans-serif;
+$paragraph-fz: 1rem;
+$paragrah-weight: 400;
+$logo-sm: 2rem;
+$logo-md: 3rem;
+$logo-lg: 3.3rem;
+$logo-weight: 700;

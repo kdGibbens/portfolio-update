@@ -25,7 +25,7 @@
           mailTo: 'mailto:gibbenskd@gmail.com',
           about: {
             title: "Hi, my name is Kelly and I'm a Front-end Developer",
-            description: 'About me...'
+            description: 'About me... I do stuff and things'
           }
         }
       },
