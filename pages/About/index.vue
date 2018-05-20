@@ -1,9 +1,9 @@
 <template>
   <div class="about">
-    <div class="left">
+    <div class="left section">
       <card-info></card-info>
      </div>
-    <div class="right">
+    <div class="right section">
       <div class="about__text">
         <h3>{{about.title}}</h3>
         <p class="paragraph">
