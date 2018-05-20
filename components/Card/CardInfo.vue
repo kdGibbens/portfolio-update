@@ -2,6 +2,7 @@
     <div class="info-card">
 
         <div class="card-header">
+            <img src="~/assets/images/kelly-gibbens.jpg" alt="Kelly Gibbens - Front-end Web Developer" class="card-img">
         </div>
 
         <div class="card-body">
