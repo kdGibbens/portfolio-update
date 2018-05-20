@@ -43,6 +43,10 @@
                     justify-items: center;
                     a {
                         font-size: 2rem;
+                        transition: .5s;
+                        &:hover {
+                            color: #516A89;
+                        }
                     }
                 }
                 a {

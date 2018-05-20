@@ -9,9 +9,7 @@
         <p class="paragraph">
           {{about.description}}
         </p>
-        <p>
-          {{about.description }}
-        </p>
+        <p>{{about.process}}</p>
       </div>
     </div>
   </div>
@@ -27,8 +25,9 @@
           email: 'gibbenskd@gmail.com',
           mailTo: 'mailto:gibbenskd@gmail.com',
           about: {
-            title: "Hi, my name is Kelly and I'm a Front-end Developer",
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, diam vitae fermentum lobortis, nisl nulla accumsan sem, quis maximus erat ex sed purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam lorem lorem, lobortis a tellus et, porttitor fringilla ante. Nunc semper neque et ullamcorper posuere. Maecenas faucibus aliquet elit non tristique. Nunc vestibulum iaculis tortor sit amet auctor. Nulla eu elementum mi.'
+            title: "Hi, my name is Kelly and I build on the Web.",
+            description: 'I am passionate about building compelling and engaging web interfaces. I have worked on global campaigns for Tom\'s of Maine, Hill\'s Pet Food and United Rentals, as well as smaller clients looking to have a precesence on the web. I believe in building responsive systems that engage the user and help develop relationships between product owners and with their reach.',
+            process: 'I begin development with a mobile approach and grow it out to suit the devices that users are on. Using everything from HTML, CSS, and JavaScript I aim to have the best solutions.'
           }
         }
       },

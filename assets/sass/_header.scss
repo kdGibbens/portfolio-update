@@ -62,7 +62,7 @@
                 .nav-item {
                     text-decoration: none;
                     color: rgba(254, 254, 254, 0.5);
-                    transition: 250ms;
+                    transition: .5s;
                     line-height: 3rem;
                     font-size: 1.5rem;
                     &.nuxt-link-exact-active {
