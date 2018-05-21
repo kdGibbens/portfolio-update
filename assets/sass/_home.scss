@@ -12,14 +12,13 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        grid-template-rows: 4rem 5rem 2rem;
+        grid-template-rows: 4rem 5rem 5rem;
     }
     @include breakpoint($laptop){
         background: url('~/assets/images/kelly-gibbens-bg-lg.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        grid-template-rows: 2rem 5rem 2rem;
     }
     h1 {
         font-family:$logo;
@@ -33,10 +32,12 @@
             grid-column: 2 /12;
             justify-self: end;
             align-self: end;
+            grid-row: 3 /4;
         }
         @include breakpoint($laptop){
             font-size: $logo-lg;
             grid-column: 3 / 11;
+            grid-row: 2 / 3;
         }
     }
     h2 {
@@ -45,10 +46,12 @@
         color: $white;
         @include breakpoint($tablet){
             justify-self: end;
+            grid-row: 4 / 5;
         }
         @include breakpoint($laptop){
             grid-column: 3 / 11;
             justify-self: end;
+            grid-row: 3 / 4;
         }
     }
 }
