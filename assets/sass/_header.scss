@@ -1,7 +1,6 @@
 .header-container {
-    background: $gray;
+    background: $white;
     border-bottom: .25rem solid rgb(63, 63, 63);;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
@@ -17,7 +16,7 @@
             text-decoration: none;
             font-size: 1.5rem;
             font-family: $logo;
-            color: $white;
+            color: #516A89;
             justify-self: start;
             z-index: 2;
         }
@@ -57,17 +56,22 @@
                     z-index: 1;
                     .nav-item {
                         font-size: 2.5rem;
+                        color: $white;
+                        line-height: 4rem;
+                        &.nuxt-link-exact-active {
+                            color: $white;
+                        }
                     }
                 }
                 .nav-item {
                     text-decoration: none;
-                    color: rgba(254, 254, 254, 0.5);
+                    color: rgba(81, 106, 137, 0.5);
                     transition: .5s;
                     line-height: 3rem;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     &.nuxt-link-exact-active {
-                        border-bottom: 4px solid $white;
-                        color: $white;
+                        border-bottom: 4px solid #516A89;
+                        color: #516A89;
                         font-weight: 700;
                     }
                     &:hover {
@@ -78,7 +82,7 @@
             &__btns {
                 width: 2.75rem;
                 height: 2.75rem;
-                border: .2rem solid $white;
+                border: .2rem solid #516A89;
                 border-radius: 50%;
                 display: block;
                 overflow: hidden;
@@ -99,11 +103,11 @@
                     line-height: 2.75rem;
                     text-align: center;
                     transition: 300ms;
-                    color: $white;
+                    color: #516A89;
                     background: transparent;
                     &.menu__btn--close {
-                        background: $white;
-                        color: $gray;
+                        background: #516A89;
+                        color: $white;
                     }
                 }
             }

@@ -1,9 +1,10 @@
 .main-footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background: rgb(63, 63, 63);
-    color: #ffffff;
+    background: $white;
+    color: #516A89;
     align-items: center;
+    border-top: .25rem solid #516A89;
     p {
         grid-column: 2 / 12;
         @include breakpoint($laptop){
