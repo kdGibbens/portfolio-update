@@ -35,6 +35,7 @@
                     border-radius: 5px;
                     .card-img {
                         width: 100%;
+                        filter: saturate(1);
                     }
                 }
                 .card-footer {

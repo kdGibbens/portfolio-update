@@ -1,9 +1,10 @@
 .header-container {
     background: $white;
-    border-bottom: .25rem solid rgb(63, 63, 63);;
+    border-bottom: .25rem solid #516A89;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
+    z-index: 1;
     .header {
         grid-column: 2 /3;
         display: grid;
@@ -49,17 +50,17 @@
                 &.open {
                     transform: translateX(0);
                     padding: 5rem 1rem;
-                    border-radius: 0 1rem 1rem 0;
-                    background: $gray;
+                    border-radius: 0 5px 5px 0;
+                    background: $white;
                     text-align: center;
                     box-shadow: 2px 0 10px 0 rgba(0,0,0,0.75);
                     z-index: 1;
                     .nav-item {
                         font-size: 2.5rem;
-                        color: $white;
+                        color: rgba(81, 106, 137, 0.5);
                         line-height: 4rem;
                         &.nuxt-link-exact-active {
-                            color: $white;
+                            color: rgba(81, 106, 137, 1);
                         }
                     }
                 }
@@ -76,6 +77,7 @@
                     }
                     &:hover {
                         font-weight: 700;
+                        color: rgba(81, 106, 137, 1);
                     }
                 }
             }
@@ -89,6 +91,9 @@
                 position: fixed;
                 top: 1rem;
                 right: 1rem;
+                @include breakpoint($tablet){
+                    right: 3rem;
+                }
                 @include breakpoint($laptop){
                     display: none;
                 }

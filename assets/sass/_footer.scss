@@ -5,6 +5,7 @@
     color: #516A89;
     align-items: center;
     border-top: .25rem solid #516A89;
+    z-index: 1;
     p {
         grid-column: 2 / 12;
         @include breakpoint($laptop){
