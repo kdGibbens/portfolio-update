@@ -87,7 +87,7 @@
                 display: block;
                 overflow: hidden;
                 position: fixed;
-                top: .75rem;
+                top: 1rem;
                 right: 1rem;
                 @include breakpoint($laptop){
                     display: none;
