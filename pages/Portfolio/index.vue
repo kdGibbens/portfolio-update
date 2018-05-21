@@ -64,19 +64,10 @@
               fa: 'fas',
               icon: 'language'
             },
-            pomodoro: {
-              id: 'pomodoro',
-              name: 'Break Time',
-              url: '#',
-              internal: false,
-              new: false,
-              fa: 'far',
-              icon: 'clock'
-            },
             speechToText: {
               id: 'speechToText',
               name: 'Speech to Text',
-              url: '#',
+              url: 'https://vibrant-ritchie-6861ef.netlify.com/',
               internal: false,
               new: false,
               fa: 'far',
