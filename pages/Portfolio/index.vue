@@ -64,6 +64,24 @@
               fa: 'fas',
               icon: 'language'
             },
+            pomodoro: {
+              id: 'pomodoro',
+              name: 'Break Time',
+              url: '#',
+              internal: false,
+              new: false,
+              fa: 'far',
+              icon: 'clock'
+            },
+            speechToText: {
+              id: 'speechToText',
+              name: 'Speech to Text',
+              url: '#',
+              internal: false,
+              new: false,
+              fa: 'far',
+              icon: 'comment'
+            },
             quote: {
               id:'Quote',
               name: 'Quote Machine',

@@ -27,7 +27,7 @@
           about: {
             title: "Hi, my name is Kelly and I build on the Web.",
             description: 'I am passionate about building compelling and engaging web interfaces. I have worked on global campaigns for Tom\'s of Maine, Hill\'s Pet Food and United Rentals, as well as smaller clients looking to have a precesence on the web. I believe in building responsive systems that engage the user and help develop relationships between product owners and with their reach.',
-            process: 'I begin development with a mobile approach and grow it out to suit the devices that users are on. Using everything from HTML, CSS, and JavaScript I aim to have the best solutions.'
+            process: 'I begin development with a mobile approach and grow it out to suit the devices that users are on. Using the tools that are best for the job.'
           }
         }
       },
