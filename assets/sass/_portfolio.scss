@@ -47,7 +47,9 @@
                 @include breakpoint($tablet){
                     margin-top: 0;
                 }
-                
+            }
+            &.older {
+                margin-bottom: 2rem;
             }
         }
     }
