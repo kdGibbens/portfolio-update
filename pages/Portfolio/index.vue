@@ -37,6 +37,15 @@
           older: 'Older Projects:',
           recent: 'Recent Projects:',
           portfolio: {
+            oblique: {
+              id: 'oblique',
+              name: 'Oblique Strategies',
+              url: 'https://hungry-lumiere-800fda.netlify.com/',
+              internal: false,
+              new: true,
+              fa: 'fas',
+              icon: 'bomb'
+            },
             nasa: {
               id: 'nasa',
               name: 'Nasa Image Search',
