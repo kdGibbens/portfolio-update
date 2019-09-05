@@ -1,6 +1,6 @@
 # kelly-gibbens-portfolio
 
-> New portfolio with Nuxt, Vue, and Storyblock
+> New portfolio with Nuxt, Vue
 
 ## Build Setup
 
